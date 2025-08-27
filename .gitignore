@@ -1,0 +1,5 @@
+#nothing from build should follow
+build/
+
+#make sure executables don't come through
+*.o

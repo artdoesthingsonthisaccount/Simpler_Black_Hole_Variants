@@ -1,4 +1,7 @@
 #creates .so object for the smartheap library 
+
+#chose this structure so it looks like other libraries where you can write #include <lib/libfeature.h>
+
 add_library(smartheap SHARED
     src/heap.cpp #actual feature
     src/heap_utils.cpp #feature utils

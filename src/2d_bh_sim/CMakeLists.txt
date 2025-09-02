@@ -5,7 +5,6 @@ add_executable(2d_bh_sim
 
 
 #old code:
-
 # target_include_directories(2d_bh_sim PRIVATE
 #     ${GLFW3_INCLUDE_DIRS}
 #     ${GLEW_INCLUDE_DIRS}

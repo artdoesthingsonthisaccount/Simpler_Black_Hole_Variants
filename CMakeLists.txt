@@ -9,7 +9,15 @@ set(CMAKE_CXX_REQUIRE_STANDARD ON)
 
 find_package(PkgConfig REQUIRED) #cmake module for finding packages
 
-#NOTE: I don't actually know how the pkg functions work
+#NOTE: The pkg_check_modules functions basically find and setup all the directory library and modules
+
+#GLFW3 example:
+#<prefix>: GLFW3 - the variable name. populates info under GLFW3_INCLUDE_DIRS, GLFW3_LIBRARY_DIRS, ect
+#REQUIRE: failes if package isn't found
+#<module: glfw3 - module name. name of the module we're looking for, specified by what we want pkg-config to find
+#   -> this name is specified by the .pc file in the libraries contents. the name for this is a pkg-config so it makes sense
+
+
 pkg_check_modules(GLFW3 REQUIRED glfw3) #requires finding glfw3 for window management
 pkg_check_modules(GLEW  REQUIRED glew) #require finding glew for window managment (also???)
 find_package(OpenGL REQUIRED) #require that we find the actual openGL package for rendering

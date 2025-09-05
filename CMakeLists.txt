@@ -32,6 +32,7 @@ add_subdirectory(lib/libsmartheap)
 
 #for the subprojects
 add_subdirectory(src/2d_bh_sim)
+add_subdirectory(src/basic_opengl_tutorial)
 add_subdirectory(src/3d_bh_sim)
 add_subdirectory(src/3d_bh_sim_smartheap)
 add_subdirectory(src/3d_bh_sim_binary)
